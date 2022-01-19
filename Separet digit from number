@@ -1,0 +1,27 @@
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+
+int num,n,i=0,remaindr=0;
+cout<<"Enter Num";cin>>num;
+cout<<"array size:";cin>>n;
+
+int arr[n];
+while(num!=0)
+{
+    remaindr=num%10;
+    arr[i]=remaindr;
+    num/=10;
+    i++;
+}
+
+for(i=0;i<=n;i++)
+{
+cout<<"Elements"<<arr[n-i]<<endl;
+}
+
+return 0;
+}
